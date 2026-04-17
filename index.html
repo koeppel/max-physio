@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Physio | Movement Without Limits</title>
+    <meta
+      name="description"
+      content="Physiotherapy by Max: hands-on treatment, active rehab, and personal plans to reduce pain and improve performance."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind = window.tailwind || {};
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Fraunces", "serif"],
+              sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                sand: "#f3efe7",
+                clay: "#d99f6c",
+                teak: "#1f3e3e",
+                slate: "#0f172a",
+                mint: "#8fb9a8",
+              },
+            },
+            boxShadow: {
+              card: "0 12px 40px rgba(31, 41, 55, 0.12)",
+            },
+            keyframes: {
+              rise: {
+                "0%": { opacity: "0", transform: "translateY(16px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              floatSlow: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+            animation: {
+              rise: "rise 700ms ease-out both",
+              floatSlow: "floatSlow 7s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 12% 18%, rgba(217, 159, 108, 0.24), transparent 40%),
+          radial-gradient(circle at 90% 8%, rgba(143, 185, 168, 0.2), transparent 38%),
+          linear-gradient(180deg, #fffefb 0%, #f8f5ef 100%);
+      }
+
+      .glass {
+        backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-black antialiased">
+    <header class="sticky top-0 z-40 border-b border-brand-clay/20 glass">
+      <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+        <a href="#home" class="font-display text-xl font-bold text-brand-teak">Max Physio</a>
+        <nav class="hidden gap-8 text-sm font-semibold md:flex">
+          <a class="transition hover:text-brand-teak" href="#services">Services</a>
+          <a class="transition hover:text-brand-teak" href="#about">About</a>
+          <a class="transition hover:text-brand-teak" href="#contact">Contact</a>
+        </nav>
+        <a
+          href="#contact"
+          class="rounded-full bg-brand-teak px-4 py-2 text-sm font-bold text-black transition hover:bg-brand-slate"
+        >
+          Book now
+        </a>
+      </div>
+    </header>
+
+    <main id="home" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute -right-20 top-16 h-56 w-56 rounded-full bg-brand-clay/25 blur-3xl animate-floatSlow"></div>
+      <div class="pointer-events-none absolute -left-16 top-72 h-44 w-44 rounded-full bg-brand-mint/25 blur-3xl animate-floatSlow"></div>
+
+      <section class="mx-auto grid w-full max-w-6xl gap-12 px-6 pb-16 pt-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:pt-24">
+        <div class="space-y-8 animate-rise">
+          <p class="inline-flex rounded-full border border-brand-teak/20 bg-white/80 px-4 py-1 text-xs font-bold uppercase tracking-[0.2em] text-brand-teak">
+            Physiotherapy in your area
+          </p>
+          <h1 class="font-display text-4xl font-bold leading-tight text-brand-slate sm:text-5xl lg:text-6xl">
+            Move better.
+            <span class="text-brand-teak">Feel stronger.</span>
+            Live without constant pain.
+          </h1>
+          <p class="max-w-xl text-lg leading-relaxed text-brand-slate/85">
+          <p class="max-w-xl text-lg leading-relaxed text-brand-slate/95">
+            Max helps people recover from injuries, reduce pain, and build resilient movement habits.
+            Every treatment combines hands-on therapy with practical exercises tailored to your daily life.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              class="rounded-full bg-brand-teak px-6 py-3 text-sm font-bold text-black transition hover:bg-brand-slate"
+            >
+              Schedule an appointment
+            </a>
+            <a
+              href="mailto:max@max-physio.com?subject=Appointment%20Request%20-%20Max%20Physio&body=Hello%20Max%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20an%20appointment.%0D%0A%0D%0AName%3A%20%0D%0APhone%20number%3A%20%0D%0A%0D%0ACurrent%20reason%20for%20appointment%3A%20%0D%0A%0D%0ABackground%20information%20on%20previous%20injuries%20or%20treatments%3A%20%0D%0A%0D%0ASince%20when%20do%20you%20have%20these%20symptoms%3F%20%0D%0A%0D%0AGoal%20for%20therapy%3A%20%0D%0A%0D%0APreferred%20appointment%20times%3A%20%0D%0A%0D%0AThank%20you!"
+              class="rounded-full border border-brand-slate/20 bg-white px-6 py-3 text-sm font-bold text-brand-slate transition hover:border-brand-teak hover:text-brand-teak"
+            >
+              Email Max
+            </a>
+          </div>
+        </div>
+
+        <div class="relative animate-rise" style="animation-delay: 150ms;">
+          <div class="rounded-3xl border border-brand-clay/30 bg-white p-8 shadow-card">
+            <div class="mb-8 grid gap-4">
+              <div class="rounded-2xl bg-brand-sand p-5">
+                <p class="text-sm font-semibold uppercase tracking-wider text-black">Special focus</p>
+                <p class="mt-2 text-lg font-bold">Sports injuries, back pain, and post-op rehab</p>
+              </div>
+              <div class="rounded-2xl border border-brand-mint/30 p-5">
+                <p class="text-sm font-semibold uppercase tracking-wider text-brand-teak">Approach</p>
+                <p class="mt-2 text-lg font-bold">Manual treatment + active exercise plans</p>
+              </div>
+            </div>
+            <div class="rounded-2xl bg-brand-teak p-6 text-black">
+              <p class="text-sm uppercase tracking-wider text-black/90">Quick contact</p>
+              <p class="mt-2 text-xl font-bold">max@max-physio.com</p>
+              <p class="mt-1 text-sm text-black/90">Fast replies for appointment requests</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="mx-auto w-full max-w-6xl px-6 py-12 lg:px-8 lg:py-16">
+        <div class="mb-10 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-teak">Services</p>
+            <h2 class="mt-3 font-display text-3xl font-bold text-brand-slate sm:text-4xl">What Max helps with</h2>
+          </div>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="rounded-2xl border border-brand-teak/10 bg-white/90 p-6 shadow-card">
+            <h3 class="text-xl font-bold">Pain Management</h3>
+            <p class="mt-3 text-brand-slate/90">
+              Targeted treatment for neck, shoulder, back, and joint pain to restore comfort in daily movement.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-brand-teak/10 bg-white/90 p-6 shadow-card">
+            <h3 class="text-xl font-bold">Injury Rehabilitation</h3>
+            <p class="mt-3 text-brand-slate/90">
+              Structured recovery programs after sports injuries, surgeries, or acute strain episodes.
+            </p>
+          </article>
+          <article class="rounded-2xl border border-brand-teak/10 bg-white/90 p-6 shadow-card">
+            <h3 class="text-xl font-bold">Performance Movement</h3>
+            <p class="mt-3 text-brand-slate/90">
+              Mobility and strength planning to improve movement quality and reduce re-injury risk.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto w-full max-w-6xl px-6 py-12 lg:px-8 lg:py-16">
+        <div class="grid gap-8 rounded-3xl border border-brand-teak/10 bg-white/90 p-8 shadow-card lg:grid-cols-[1.2fr_1fr] lg:p-10">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-teak">About Max</p>
+            <h2 class="mt-3 font-display text-3xl font-bold text-brand-slate sm:text-4xl">Evidence-based care with a personal touch</h2>
+            <p class="mt-5 max-w-2xl text-lg leading-relaxed text-brand-slate/85">
+              Max combines clinical know-how with practical coaching. The goal is simple: help you understand your body,
+              recover safely, and stay active with confidence.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-brand-sand p-6">
+            <p class="text-sm font-semibold uppercase tracking-wider text-black">Why clients choose Max</p>
+            <ul class="mt-4 space-y-3 text-black/90">
+              <li>1:1 sessions and clear communication</li>
+              <li>Hands-on treatment plus active home exercises</li>
+              <li>Plans adapted to work, sport, and lifestyle</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto w-full max-w-6xl px-6 pb-20 pt-12 lg:px-8 lg:pb-24">
+        <div class="rounded-3xl bg-brand-teak p-8 text-black shadow-card lg:flex lg:items-center lg:justify-between lg:p-10">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.2em] text-black/80">Contact</p>
+            <h2 class="mt-3 font-display text-3xl font-bold sm:text-4xl">Ready to start your recovery?</h2>
+            <p class="mt-4 max-w-2xl text-black/90">
+              Reach out to book a first appointment or ask a question about treatment options.
+            </p>
+          </div>
+          <div class="mt-8 lg:mt-0">
+            <a
+              class="inline-flex rounded-xl bg-white px-6 py-3 text-base font-bold text-brand-slate transition hover:bg-brand-sand"
+              href="mailto:max@max-physio.com?subject=Appointment%20Request%20-%20Max%20Physio&body=Hello%20Max%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20an%20appointment.%0D%0A%0D%0AName%3A%20%0D%0APhone%20number%3A%20%0D%0A%0D%0ACurrent%20reason%20for%20appointment%3A%20%0D%0A%0D%0ABackground%20information%20on%20previous%20injuries%20or%20treatments%3A%20%0D%0A%0D%0ASince%20when%20do%20you%20have%20these%20symptoms%3F%20%0D%0A%0D%0AGoal%20for%20therapy%3A%20%0D%0A%0D%0APreferred%20appointment%20times%3A%20%0D%0A%0D%0AThank%20you!"
+            >
+              Send email to Max
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-brand-teak/20 px-6 py-6 text-center text-sm text-brand-slate/85">
+      <p>&copy; <span id="year"></span> Max Physio. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
