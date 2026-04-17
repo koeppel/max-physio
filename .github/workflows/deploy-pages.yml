@@ -21,7 +21,7 @@ jobs:
             == true
         runs-on: ubuntu-latest
         environment:
-            name: github
+            name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
 
         steps:
